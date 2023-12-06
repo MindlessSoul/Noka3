@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | NoKa 3</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Register.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="navbar">
+                <img src="asset/1.png" class="logo2">
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="Home.html" class="nav-link active">Home</a></li>
+                    <li><a href="esport.html" class="nav-link">Esport</a></li>
+                    <li><a href="news.html" class="nav-link">News</a></li>
+                    <li><a href="hero.html" class="nav-link">Heroes</a></li>
+                    <li><a href="Register.html" class="nav-link">Register</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="kotak">
+        <div id="kotakContent">
+            <div id="kotaklogin">
+              <h2>REGISTER</h2>
+            </div>
+            <form class="form" id="register-form">
+
+                <div class="textbox-box">
+                <label class="textbox">&nbsp;Name</label><br>
+                    <input id="userName" class="formContent" type="text" name="name"/>
+                    <div class="formBorder"></div>
+                    <p>Error Message</p>
+                </div>
+
+                <div class="textbox-box">
+                    <label class="textbox">&nbsp;NIM</label><br>
+                        <input id="userNIM" class="formContent" type="nim" name="nimmahasiswa">
+                        <div class="formBorder"></div>
+                        <p>Error Message</p>
+                    </div>
+
+                <div class="textbox-box">
+                <label class="textbox">&nbsp;Email</label><br>
+                    <input id="userEmail" class="formContent" type="email" name="useremail"/>
+                    <div class="formBorder"></div>
+                    <p>Error Message</p>
+                </div>
+                
+                <div class="textbox-box">
+                <label class="textbox">&nbsp;Password</label><br>
+                    <input id="userPassword" class="formContent" type="password" name="password"/>
+                    <div class="formBorder"></div>
+                    <p>Error Message</p>
+                </div>
+
+                <div class="textbox-box">
+                <label class="textbox">&nbsp;Confirm Password</label><br>
+                    <input id="userConfirmPass" class="formContent" type="password" name="confirmpassword"/>
+                    <div class="formBorder"></div>
+                    <p>Error Message</p>
+                </div>
+
+                <div class="textbox-box">
+                <div class="checking">
+                <input type="checkbox" id="check">
+                <label for="check">I Agree to the Terms and Conditions</label>
+                </div>
+                <p>Error Message</p>
+                </div>
+
+                <input id="tombolSubmit" type="submit" name="submit" value="Register" />
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-area">
+        <div class="footer-sep"></div>
+        <div class="footer-wrapper">
+            <div class="footer-content footer-left">
+               
+                <div class="footer-logo">
+                    <img src="asset/1.png">
+                </div>
+                <div class="socmed-icons">
+                    <a href="https://facebook.com/Simpleverything_Store" target=" _blank" rel="noopener noreferrer"
+                        class="fb fab fa-facebook">
+                    </a>
+                    <a href="https://instagram.com/Simpleverything_Store" target=" _blank" rel="noopener noreferrer"
+                        class="ig fab fa-instagram">
+                    </a>
+                    <a href="MailtoSimpleverything@gmail.com" target=" _blank" rel="noopener noreferrer"
+                        class="tw fa-solid fa-envelope">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content footer-right">
+    
+                <div class="creator-credit">&copy;About Us<br>
+                    The best moba game in Indonesia<br>
+                   Download and play now
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--link to js--->
+<script type="text/javascript" src="js/navbar.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+</body>
+</html>

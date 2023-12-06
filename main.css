@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+.title{
+    margin-left: 150px;
+    margin-bottom: 2px;
+}
+
+/* Navbar */
+.logo2{
+    width: 100px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10000;
+    transition: all 0.4s ease;
+}
+
+.navbar{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.nav-menu .nav-list{
+    display: flex;
+}
+.nav-menu li{
+    margin-right: 2rem;
+}
+.nav-link{
+    color: rgba(255, 255, 255, 0.56);
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-toggle{
+    font-size: 2rem;
+    padding: 5px 5px 0;
+    border: 2px solid transparent;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+    color: white;
+}
+
+.scroll-header{
+    background-color: black;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.781);
+}
+
+.nav-link:hover .scroll-header{
+    color: white;
+}
+
+/* Footer */
+.footer-area {
+  background: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .footer-area .footer-sep {
+    width: 100%;
+    height: 5px;
+    background-color: #303030;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 72px;
+  }
+  
+  .footer-area .footer-wrapper {
+    padding: 32px 16px;
+    -khtml-display: flex;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+  }
+  
+  .footer-area .footer-wrapper .footer-content {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.586);
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-left {
+    text-align: left;
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-left .footer-logo {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-left .footer-logo img {
+    height: 50px;
+    width: auto;
+    margin-left: auto;
+  }
+  
+  .socmed-icons a {
+    font-size: 21px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 12px;
+    color: white;
+  }
+  
+  .socmed-icons a:hover {
+    color: rgb(255, 134, 134);
+  }
+  
+  
+  .footer-area .footer-wrapper .footer-content.footer-right {
+    text-align: right;
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-right div {
+    margin-top: 33px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-right div span {
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-right div span:hover {
+    color: black;
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-right .creator-credit {
+    font-size: 14px;
+    color: white;
+  }
+  
+  .footer-area .footer-wrapper .footer-content.footer-right .creator-credit:hover {
+    color: rgb(255, 134, 134);
+  }
+  
+  .footer-area .footer-wrapper .footer-content .socmed-icons {
+    font-family: "FontAwesome Brands";
+    margin-top: 0px;
+  }
+@media (max-width: 800px) {
+    .nav-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100vh;
+        background-color: black;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: capitalize;
+        padding-top: 5rem;
+        box-shadow: 0 0 5px rgba(0,0,0,0.4);
+        transition: all 0.4s ease-in-out;
+    }
+    .show-nav{
+        width: 60%;
+    }
+    .nav-menu .nav-list{
+        display: block;
+    }
+    .nav-menu li{
+        padding: 15px 0;
+    }
+    .nav-link{
+        font-size: 1.25rem;
+    }
+    .nav-toggle{
+        display: block;
+    }
+}
